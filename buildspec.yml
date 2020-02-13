@@ -1,0 +1,15 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+        nodejs: 12
+  pre_build:
+    commands:
+      - npm install --no-progress --silent -g npm
+      - npm install --no-progress --silent -g serverless
+      - npm --version
+  build:
+    commands:
+      - npm run test
+      - serverless deploy
