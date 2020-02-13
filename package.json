@@ -1,0 +1,8 @@
+{
+  "name": "getPet",
+  "description": "",
+  "version": "0.1.0",
+  "devDependencies": {
+    "serverless": "^1.57.0"
+  }
+}
