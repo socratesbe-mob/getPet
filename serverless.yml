@@ -1,13 +1,13 @@
-service: getPet
+service: getPet2
 
 provider:
   name: aws
   runtime: nodejs12.x
-  region: eu-west-1
+  region: eu-west-2
 
 
 functions:
-  omnicloud:
+  getPet:
     handler: app.handler
     events:
       - http:
