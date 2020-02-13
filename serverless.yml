@@ -1,0 +1,19 @@
+service: getPet2
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  region: eu-west-2
+
+
+functions:
+  getPet:
+    handler: app.handler
+    events:
+      - http:
+          path: /getPet
+          method: get
+          request:
+            parameters:
+              querystrings:
+                tz: true

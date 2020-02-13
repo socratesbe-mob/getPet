@@ -1,0 +1,25 @@
+{
+  "name": "getpet",
+  "version": "0.1.0",
+  "dependencies": {
+
+  },
+  "main": "app.js",
+  "devDependencies": {
+      "serverless": "^1.57.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/socratesbe-mob/getPet.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/socratesbe-mob/getPet/issues"
+  },
+  "homepage": "https://github.com/socratesbe-mob/getPet#readme",
+  "description": ""
+}
