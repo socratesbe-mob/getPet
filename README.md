@@ -9,21 +9,21 @@ Deploy this code using Amazon Codebuild and the Serverless framework.
 1. In the AWS console
     1. Create a lambda (nodeJS 12.x)
     1. Paste in this code:
-      ```javascript
-      exports.listPets = async (event) => {
-          const response = {
-              statusCode: 200,
-              body: JSON.stringify(
-              {
-              message: 'getPet API',
-              names: ['Tom','Jerry','Spike'],
-              date: new Date()
-              }
-                  ),
-          };
-          return response;
-      };
-      ```
+       ```javascript
+       exports.listPets = async (event) => {
+           const response = {
+               statusCode: 200,
+               body: JSON.stringify(
+               {
+               message: 'getPet API',
+               names: ['Tom','Jerry','Spike'],
+               date: new Date()
+               }
+                   ),
+           };
+           return response;
+       };
+       ```
     1. Add an API Gateway as a trigger (HTTP API)
     1. Save it all
     1. Call the endpoint to verify it works.
