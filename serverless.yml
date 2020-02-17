@@ -1,4 +1,4 @@
-service: getPet2
+service: PetStore
 
 provider:
   name: aws
@@ -7,11 +7,11 @@ provider:
 
 
 functions:
-  getPet:
+  listPet:
     handler: app.handler
     events:
       - http:
-          path: /getPet
+          path: /pet
           method: get
           request:
             parameters:
