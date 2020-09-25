@@ -26,7 +26,7 @@ Deploy this code using Amazon Codebuild and the Serverless framework.
        ```
     1. Add an API Gateway as a trigger (HTTP API)
     1. Save it all
-    1. Call the endpoint to verify it works.
+    1. Call the endpoint to verify it works. (mind export.handler)
 1. Use serverless for deploys.
     1. On local machine: `npm init`
     1. Copy the lambda code to `petstore.js`
